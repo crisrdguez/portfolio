@@ -25,6 +25,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid"><!--Contenedor que se ajusta al 100%del ancho-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+                <img src="img/icono-blanco.svg" width="50" alt="Logo de la pagina web" id="home">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center"><!--Contenedor flexible y alineamos el contenido en el centro-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyec">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skill">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cont">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
     <!--Seccion Hero-->
     <section class="hero align-items-stretch"><!--La propiedad align-items-stretch estira los elementos, hero es una clase personalizada que personalizamos en el archivo css-->
         <div class="hero-principal d-flex flex-column justify-content-center align-items-center "><!--Esto es exactamente lo mismo que en estilos.css, la parte de section-->
@@ -36,5 +63,32 @@
             <img class="hero-inferior-imagen img-fluid" src="img/skills.png" alt="Monitor, imagenes">
         </div>
     </section>
+    <!--footer-->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <a class="nav-link" href="#home"><img class="footer-logo" src="img/icono-blanco.svg" alt="logo portfolio"></a>
+        
+        <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos</p>
+        <div class="iconos-redes d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="mailto:cris_rqr@hotmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i>
+            </a>
+        </div>
+        <div class="derechos">Creado por Cristina Rodríguez Rodríguez (2023) &#169;</div>
+    </footer>
+    <!--javascript-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
 </body>
 </html>
