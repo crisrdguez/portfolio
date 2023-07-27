@@ -1,0 +1,156 @@
+/*Barra de navegacion*/
+ 
+.navbar{
+    padding:2rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Estilos generales*/
+
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem; /*2.5 veces ese tamaño, en relacion al elemento raiz*/
+    /*fonts.google.com*/
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-oscura{
+    color:white;
+    background-color:#1b1b32;
+}
+
+.seccion-clara{
+    color:black;
+    background-color: white;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding:15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color:#584e4e;
+}
+
+.btn-info{
+    font-size: 1.1rem;
+    margin:20px;
+}
+
+.texto-claro{
+    color:white;
+}
+
+.texto-negro{
+    color:black;
+}
+
+
+/* Seccion hero*/
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px; /*cuando usamos altura minima, estamos permitiendo que se estire, asi podemos restructurar el contenido para que se vea correctamente en dispositivos mas pequeños*/
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-imagen-desarrollador{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;/*para que la imagen sea redonda*/
+    margin: 20px;
+}
+
+/*
+.hero-inferior-imagen{
+    margin: 10px;
+}
+*/
+.hero-principal h2{
+    font-size: 1.5rem;
+    color:#615151;
+}
+
+
+/*Pie de pagina*/
+
+footer{
+    min-height: 500px;
+}
+
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius:50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes i{
+    color:white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes a:hover{
+    background-color: white;
+    border:2px solid rgb(13, 110, 253);
+
+}
+
+.iconos-redes a:hover i{
+    color:black;
+}
+
+.derechos{
+    font-size: 15px;
+    color:#aeaeae;
+    padding:20px;
+}
+
+
+/*Adaptable responsive */
+@media screen and (min-width:700px){
+    .hero-inferior-imagen{
+        max-width: 600px;
+    }
+}
