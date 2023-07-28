@@ -79,7 +79,7 @@ h1{
     width: 200px;
     height: 200px;
     border-radius: 50%;/*para que la imagen sea redonda*/
-    margin: 20px;
+    margin: 18px;
 }
 
 /*
@@ -90,6 +90,70 @@ h1{
 .hero-principal h2{
     font-size: 1.5rem;
     color:#615151;
+}
+
+/*Sobre mi*/
+.sobre-mi{
+    height: 560px;
+    padding: 10px;
+    /*Si hubiera mucho texto no se adapta bien*/
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+/*Contacto*/
+.contacto .container{
+    max-width: 900px;
+    min-height: 200px;
+    padding:20px;
+}
+
+.rectangulo{
+    /*El elemento esta entre una seccion y otra*/
+    margin-top:  -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius:10px;
+    box-shadow: 0px 1px 4px 1px wheat;
+}
+
+.contacto .row{
+    width: 100%;
+    display:flex;
+    align-items:center;
+}
+
+.contacto .descripcion{
+    color:white;
+    font-size:1.2rem;
+}
+
+.contacto button{
+    color:white;
+    font-weight: bold;
+    background-color: transparent;
+    border:2px solid white;
+    padding: 1.25em 2em; /* em relativo al tamaño del texto del contenedor*/
+    margin: 10px;
+    border-radius:100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button i{
+    color: antiquewhite;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color:black;
+}
+
+.contacto button:hover i{
+    color:black;
 }
 
 
@@ -149,6 +213,12 @@ footer{
 
 
 /*Adaptable responsive */
+@media screen and(max-width: 767px){
+    .navbar-brand{
+        display:none;
+    }
+}
+
 @media screen and (min-width:700px){
     .hero-inferior-imagen{
         max-width: 600px;
